@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asim Khan - Personal Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
-         body {
+        body {
             font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f8f8;
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
+
         .header {
             background-color: #35424a;
             color: white;
             text-align: center;
             padding: 30px 0;
         }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -27,6 +31,7 @@
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
             overflow-x: hidden;
         }
+
         .footer {
             text-align: center;
             padding: 20px;
@@ -34,57 +39,79 @@
             color: white;
             overflow-x: hidden;
         }
+
         .footer a {
             color: white;
             text-decoration: none;
-            display: block;
+            display: inline-block;
             margin-right: 10px;
             padding-right: 20px;
+            font-size: 20px;
         }
-        .footer .social-icons {
+
+        .profile-image {
+            border-radius: 50%;
+            max-width: 150px;
+            max-height: 150px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .divider {
+            width: 100%;
+            border-top: 1px dashed #ccc;
+            margin: 20px 0;
+        }
+
+        h2, h3 {
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            margin: 10px 0;
+        }
+
+        .skills-list {
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            flex: 0 0 50%;
+            display: flex;
             align-items: center;
+            margin: 10px 0;
         }
-        @media screen and (max-width: 768px) {
-            body {
-                overflow-x: hidden; /* Prevent horizontal scrolling */
-            }
-            .container {
-                padding: 10px;
-                overflow-x: hidden;
-            }
-            .footer {
-                padding: 10px;
-                overflow-x: hidden;
-            }
+
+        .skills-list i {
+            margin-right: 10px;
         }
-        @media screen and (max-width: 280px) {
-            .header {
-                padding: 20px 0;
-                overflow-x: hidden;
-            }
-            .container {
-                margin: 10px;
-                padding: 10px;
-                overflow-x: hidden;
-            }
-            .footer {
-                padding: 10px;
-                overflow-x: hidden;
-            }
-            .footer .social-icons {
-                font-family: 'Courier New', Courier, monospace;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+        
     </style>
-    <!-- Add Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Add Google Fonts link -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -94,145 +121,197 @@
     </div>
     
     <div class="container">
-        <div style="width: 100%;border-top: 1px dashed #ccc;margin: 20px 0;" class="divider"></div>
-        <div style="width: 100%;border-top: 1px dashed #ccc;margin: 20px 0;" class="divider"></div>
-        <h2>About Me</h2>
-        <p>Welcome to my corner of the internet! I'm Asim Khan, a Python developer based in the vibrant city of Mumbai. With a year of experience under my belt, I thrive on turning code into creative solutions.</p>
-        <h2>Interests & Hobbies</h2>
-        <p>When I'm not busy coding, I enjoy diving into the world of tech blogs, exploring new coding challenges, and embracing the latest trends in the ever-evolving tech landscape. Let's connect and share our passion for all things tech!</p>
-        <!-- Resume Details -->
-        <!-- ... Your previous code ... -->
-        <!-- Education -->
-        <div style="width: 100%;border-top: 1px dashed #ccc;margin: 20px 0;" class="divider"></div>
-        <div style="width: 100%;border-top: 1px dashed #ccc;margin: 20px 0;" class="divider"></div>
-        <h3>Education</h3>
-        <p><strong>Bachelor of Science</strong><br>
-        Ramniranjan Jhunjhunwala College, 2019-2022<br>
-        SGPA: 9.70 | GRADE: A+
-        <BR>OVERALL-CGPA : 8.45</BR></p>
-        <p><strong>Higher Secondary School</strong><br>
-        Ramniranjan Jhunjhunwala College, 2017-2019
-        <BR>PERCENTAGE: 52.31%</BR></p>
-        <p><strong>Secondary School Certificate</strong><br>
-        Sharada High School, 2007-2017
-        <BR>PERCENTAGE: 80.20%</BR></p>
-
-        <!-- Skills -->
-        <h3>Skills</h3>
-        <ul>
-            <li>Digital Marketing</li>
-            <li>Layout Designer</li>
-            <li>Photography</li>
-            <li> Full_stack Web Developer</li>
-            <li>Graphic Designing</li>
-        </ul>
-
-        <!-- Interests -->
-        <h3>Interests</h3>
-        <ul>
-            <li>Freelancing</li>
-            <li>Technologies</li>
-            <li>Philosophy</li>
-        </ul>
-
-        <!-- Languages -->
-        <h3>Languages</h3>
-        <p>English, Hindi, Marathi, Urdu, Arabic</p>
-
-        <!-- Experience -->
-        <h3>Experience</h3>
-
-        <div>
-            <p><strong>Full-Stack Web Developer</strong><br>
-            Leewayzon | (01/09/2022) - (Still-Working) | (Sakinaka)</p>
-            <ul>
-                <li>Developed web applications using Python, Django, and Flask frameworks.</li>
-                <li>Designed and implemented frontend components using HTML, CSS, and Bootstrap for responsive user interfaces.</li>
-                <li>Utilized MySQL and PostgreSQL databases to manage data efficiently and ensure seamless functionality.</li>
-                <li>Created RESTful APIs for communication between frontend and backend systems.</li>
-                <li>Handled errors and exceptions to enhance application stability and user experience.</li>
-            </ul>
+        <div class="box">
+            <h2>About Me</h2>
+            <p>Welcome to my corner of the internet! I'm Asim Khan, a Python developer based in the vibrant city of Mumbai. With a year of experience under my belt, I thrive on turning code into creative solutions.</p>
+        </div>
+        
+        <div class="box">
+            <h2>Interests & Hobbies</h2>
+            <p>When I'm not busy coding, I enjoy diving into the world of tech blogs, exploring new coding challenges, and embracing the latest trends in the ever-evolving tech landscape. Let's connect and share our passion for all things tech!</p>
         </div>
 
-
-        <!-- Purohit Academy -->
-        <div>
-            <p><strong>Purohit Academy</strong><br>
-            (15/08/2021) - (20/08/2022) | (Andheri)<br>
-            <em>Admin, Graphic Designer, Digital Marketing</em></p>
-            <!-- ... Your previous code ... -->
-        <div style="border: 1px solid #ccc; padding-right: 20px; margin-right: 35px; font-size: smaller; width: 70%;">
-            <ul style="margin-right: 4px;">
-                <li><h4>Admin Responsibilities:</h4>
-                    <ul >
-                        <li>Assisted in day-to-day administrative operations, ensuring smooth academy functioning.</li>
-                        <li>Managed schedules, appointments, and facilitated effective cross-team communication.</li>
-                        <li>Coordinated seamlessly with multiple departments, fostering collaboration.</li>
-                    </ul>
-                </li>
-                <li><h4>Graphic Designer Responsibilities:</h4>
-                    <ul>
-                        <li>Designed captivating visuals for Instagram and Facebook, enhancing online engagement.</li>
-                        <li>Crafted visually appealing graphics aligning with the academy's brand identity.</li>
-                        <li>Produced logos, visiting cards, letterheads, and cover letters reflecting the academy's image.</li>
-                    </ul>
-                </li>
-                <li><h4>Digital Marketing Responsibilities:</h4>
-                    <ul>
-                        <li>Orchestrated social media management, overseeing Instagram and Facebook platforms.</li>
-                        <li>Developed and scheduled compelling content, keeping the audience engaged and informed.</li>
-                        <li>Strategized and executed effective digital marketing campaigns, driving student acquisition.</li>
-                        <li>Analyzed campaign performance data for optimizing strategies and outcomes.</li>
-                    </ul>
-                </li>
-                <li><h4>Video Production and Editing:</h4>
-                    <ul>
-                        <li>Produced informative YouTube videos, effectively conveying educational content and promotions.</li>
-                        <li>Enhanced video quality through skillful editing, incorporating effects and transitions.</li>
-                        <li>Ensured videos aligned with the academy's branding, delivering a consistent visual message.</li>
-                    </ul>
-                </li>
-                <li><h4>Content Formatting:</h4>
-                    <ul>
-                        <li>Skillfully formatted text for various purposes, including itineraries and documents.</li>
-                        <li>Prioritized readability and visual appeal through careful typography and layout considerations.</li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="box">
+            <h3>Education</h3>
+            <p><strong>Bachelor of Science</strong><br>
+            Ramniranjan Jhunjhunwala College, 2019-2022<br>
+            SGPA: 9.70 | GRADE: A+
+            <BR>OVERALL-CGPA : 8.45</BR></p>
+            <p><strong>Higher Secondary School</strong><br>
+            Ramniranjan Jhunjhunwala College, 2017-2019
+            <BR>PERCENTAGE: 52.31%</BR></p>
+            <p><strong>Secondary School Certificate</strong><br>
+            Sharada High School, 2007-2017
+            <BR>PERCENTAGE: 80.20%</BR></p>
         </div>
-        <div>
-            <p><strong>Civil Constructor</strong><br>
-            Apna Lime Depot | (01/07/2020) - (05/08/2021) | (Sakinaka)</p>
-            <ul>
-                <li>Built multiple houses, including 2-Floor and 3-Floor structures, complete with terraces.</li>
-                <li>Designed and planned houses, ensuring functional and aesthetic aspects were considered.</li>
-            </ul>
+
+        <div class="box">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                        <path d="M3.614 1.768a.5.5 0 0 1 .772 0l5 6a.5.5 0 0 1 0 .664l-5 6a.5.5 0 0 1-.772 0l-5-6a.5.5 0 0 1 0-.664l5-6z"/>
+                    </svg> Python
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-server" viewBox="0 0 16 16">
+                        <path d="M9 1H1a.5.5 0 0 0-.5.5V15h8V1.5a.5.5 0 0 0-.5-.5zm7-.5V15a1 1 0 0 1-1 1H10v-1h5a.5.5 0 0 1 .5.5V1z"/>
+                        <path d="M9 1a2 2 0 0 1 2 2v10H7V3a2 2 0 0 1 2-2z"/>
+                        <path d="M5.732 4.732a.5.5 0 0 0-.464 0l-4 2a.5.5 0 0 0 0 .536l4 2a.5.5 0 0 0 .464 0l4-2a.5.5 0 0 0 0-.536l-4-2z"/>
+                    </svg> Django
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16">
+                        <path d="M1.5 6.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v2z"/>
+                        <path d="M3.5 5.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2z"/>
+                        <path d="M9.5 5.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2z"/>
+                        <path d="M7.5 6.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v2z"/>
+                        <path d="M1.5 11.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v2z"/>
+                        <path d="M3.5 10.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2z"/>
+                        <path d="M9.5 10.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2z"/>
+                        <path d="M7.5 11.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v2z"/>
+                    </svg> Flask
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
+                        <path d="M7.293 1.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1-1.414 1.414L8 5.414 3.293 9.121a1 1 0 0 1-1.414-1.414l4-4z"/>
+                    </svg> MySQL
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
+                        <path d="M7.293 1.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1-1.414 1.414L8 5.414 3.293 9.121a1 1 0 0 1-1.414-1.414l4-4z"/>
+                    </svg> PostgreSQL
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path d="M10.032 0a6.963 6.963 0 0 1 1.785 2H15v2h-2.183a7.002 7.002 0 0 1 0 4H15v2h-3.183a6.963 6.963 0 0 1-1.785 2H15v2h-4.183a7.007 7.007 0 0 1-7.195-2H1V8h2.822a7.007 7.007 0 0 1 0-4H1V4h3.644a6.963 6.963 0 0 1-1.61-2H1V0h4.837zM9.155 2a6.996 6.996 0 0 1 2.004 4H16v4h-4.841a7.001 7.001 0 0 1-4.007 4 7.001 7.001 0 0 1-4.007-4H0V6h4.841A7.001 7.001 0 0 1 8.845 2h.31z"/>
+                        </svg> RestAPI
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-branch" viewBox="0 0 16 16">
+                            <path d="M1.5 1.5a.5.5 0 0 1 .5.5v9.793l3.146-3.147a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708L7.793 11H1.5a.5.5 0 0 1-.5-.5V2.5a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M1.5.5a1.5 1.5 0 0 1 1.5 1.5V11h6.293a1.5 1.5 0 0 1 1.061.439l6 6a1.5 1.5 0 0 1 0 2.122l-6 6a1.5 1.5 0 0 1-2.122 0l-6-6A1.5 1.5 0 0 1 .207 17H1.5a1.5 1.5 0 0 1 1.5 1.5V2.5a1.5 1.5 0 0 1-1.5-1z"/>
+                        </svg> Alembic
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                            <path d="M3.293 6.293a1 1 0 1 1 1.414-1.414l8 8a1 1 0 0 1-1.414 1.414l-8-8z"/>
+                            <path d="M10.293 7.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414-1.414l8-8a1 1 0 0 1 1.414 0z"/>
+                        </svg> Marshmallow
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-branch" viewBox="0 0 16 16">
+                            <path d="M1.5 1.5a.5.5 0 0 1 .5.5v9.793l3.146-3.147a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708L7.793 11H1.5a.5.5 0 0 1-.5-.5V2.5a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M1.5.5a1.5 1.5 0 0 1 1.5 1.5V11h6.293a1.5 1.5 0 0 1 1.061.439l6 6a1.5 1.5 0 0 1 0 2.122l-6 6a1.5 1.5 0 0 1-2.122 0l-6-6A1.5 1.5 0 0 1 .207 17H1.5a1.5 1.5 0 0 1 1.5 1.5V2.5a1.5 1.5 0 0 1-1.5-1z"/>
+                        </svg> DRF
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M7.757 0a.757.757 0 0 1 .53.22c.138.146.329.439.47.784.262.414.69 1.897.357 3.93l-.268 1.428H12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v2l-2-1-2 1v-2H4a2 2 0 01 -2 1-2v2H2a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h4.475l.237-1.261c.19-1.011.203-2.083-.002-3.103a1.014 1.014 0 0 0-.288-.965 1.01 1.01 0 0 0-.973-.303zM8 16H7a1 1 0 0 1-1-1v-1h2v1a1 1 0 0 1-1 1zM4 8h6v2H4V8z"/>
+                        </svg> Git
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                            <path d="M11.293 1.293a1 1 0 0 1 1.414 1.414l-8 8a1 1 0 0 1-1.414-1.414l8-8a1 1 0 0 1 0 0z"/>
+                            <path d="M10.5 1.5a.5.5 0 0 1 1 0V4h2.5a.5.5 0 0 1 0 1H11v2.5a.5.5 0 0 1-1 0V5H7.5a.5.5 0 0 1 0-1H10V1.5z"/>
+                        </svg> HTML
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                            <path d="M2.79 4.116a.5.5 0 0 1 .266-.134l11.732-.001a.5.5 0 0 1 .266.134.5.5 0 0 1 .104.211l.001 7.746a.5.5 0 0 1-.104.21.5.5 0 0 1-.265.135l-11.732.001a.5.5 0 0 1-.266-.134.5.5 0 0 1-.104-.211l-.001-7.746a.5.5 0 0 1 .104-.21zM2.5 0a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V.5a.5.5 0 0 0-.5-.5h-11z"/>
+                        </svg> Bootstrap
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-css3" viewBox="0 0 16 16">
+                            <path d="M3.744 1.045l-2.375.63-.28 1.267 2.583.678.322-1.482H14.75L14.152 12H1.848l-.597-10.455h13.94zm-.06 2.012L4.464 3.286 9 4.855 13.536 3.286l.18-.808H3.685l.999 4.565-.003-.001-.159.723-.628 2.865L8 11.144l4.106-2.964.122-.554.447-2.03H3.682zm.292 3.538l-.081.368-.319 1.456-.002.003-.158.723-.628 2.865 5.464-1.572-.318-1.454H4.977zm.001-2.115l-.08.367-.319 1.456h5.464l-.318-1.455H5.978z"/>
+                        </svg> CSS
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-javascript" viewBox="0 0 16 16">
+                            <path d="M6.864.084c.282-.09.59-.084.86.022.277.108.525.28.722.533l5.306 9.192c.184.319.286.694.286 1.09 0 1.158-.94 2.098-2.098 2.098-.77 0-1.447-.353-1.904-.898l-.614.898H5.314L5.007 12H2.098C.94 12 .0 11.06.0 9.902c0-.789.367-1.482.937-1.942L6.864.084zM8 10.17l-3.768-6.53c-.086-.15-.121-.314-.086-.472a.876.876 0 0 1 .244-.432c.194-.234.52-.312.808-.225L8 3.829v6.341zm.276-.682l1.288-.001a.877.877 0 0 1 .888.835c.013.329-.136.573-.431.774L8.276 9.488z"/>
+                        </svg> JavaScript
+                    </li>
+                </ul>
+        
         </div>
-       
-
-        <!-- Contact -->
-        <p><h3>Contact </h3>
-        armankhan232019@gmail.com</p>
-        </div>
-    </div>
-
-
-    <div class="footer">
-        <div class="social-icons">
-            <a href="https://www.instagram.com/arman__asim" target="_blank" rel="noopener noreferrer"style="font-size: 20px; font-family: monospace;">&#128247;Instagram</a>
-            <a href="mailto:au.khan9566@gmail.com" style="font-size: 20px; font-family: monospace;">&#9993; Mail</a>
-        </div>
-    </div>
-    </body>
-</html>
-
-
+        
+        
     
-
-<!-- Resume Details -->
-
-
-
-
-
-
+            <div class="box">
+                <h3>Interests</h3>
+                <ul>
+                    <li>Freelancing</li>
+                    <li>Technologies</li>
+                    <li>Philosophy</li>
+                </ul>
+            </div>
+    
+            <div class="box">
+                <h3>Languages</h3>
+                <p>English, Hindi, Marathi, Urdu, Arabic</p>
+            </div>
+    
+            <div class="box">
+                <h3>Experience</h3>
+                <div>
+                    <p><strong>Python Developer</strong><br>
+                    SH-Tech Trading Services | (25/07/2022) - (Still-Working) | (Jogeshwari)</p>
+                    <ul>
+                        <li>Full-Stack Web Development: Proficient in Python, Django, and Flask for backend development and HTML, CSS, and Bootstrap for frontend design.</li>
+                        <li>Database Management: Managed MySQL, PostgreSQL, and MongoDB databases for scalable data solutions.</li>
+                        <li>API Design: Reduced data transfer latency by 50%, increased API response speed by 30%, and improved system efficiency by 20% for seamless data exchange between web applications and external services.</li>
+                        <li>Version Control: Utilized Git and GitHub for efficient code versioning and collaboration.</li>
+                        <li>Collaboration and Documentation: Reduced development time by 20% through cross-functional teamwork and achieved a 95% codebase documentation coverage, enhancing system architecture comprehension.</li>
+                        <li>Frontend Frameworks: Proficient in Angular and Bootstrap, driving a 25% boost in user engagement and a 15% faster page load time for improved user experience.</li>
+                        <li>User Authentication: Implemented Session and JWT Authentication systems, reducing unauthorized access incidents by 40% and enhancing system security by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="box">
+                <h3>Relevant Projects</h3>
+                <!-- Project 1: Student Tracker 360 -->
+                <section>
+                    <strong><p>Student Tracker 360</p></strong>
+                    <p>Created a robust API and logic controllers for CRUD operations, ensuring seamless data management.</p>
+                    <p>Integrated MySQL, PostgreSQL, and MongoDB databases for enhanced data flexibility.</p>
+                    <p>Implemented Alembic for smooth database version control during updates.</p>
+                    <p>Proactively addressed and resolved errors, contributing to project success and reliability.</p>
+                    <!-- You can also add images or links to the project here if you have them. -->
+                </section>
+    
+                <!-- Project 2: E-commerce -->
+                <section>
+                    <strong><p>E-commerce</p></strong>
+                    <p>E-commerce Solution: Created a full-fledged online shopping platform with a user-friendly interface, efficient shopping cart, secure payments, and real-time inventory management.</p>
+                    <p>Results: Improved user experience, increased orders by 25%, reduced stock errors by 50%, and boosted sales revenue by 20%.</p>
+                    <!-- You can also add images or links to the project here if you have them. -->
+                </section>
+    
+                <!-- Project 3: File Parser -->
+                <section>
+                    <strong><p>File Parser</p></strong>
+                    <p>Developed a versatile Python-based File Parser utility for extracting and processing data from various formats, reducing manual effort and enhancing data workflow efficiency.</p>
+                    <p>Supported multiple file formats (CSV, Excel, XML, JSON).</p>
+                    <!-- You can also add images or links to the project here if you have them. -->
+                </section>
+            </div>
+    
+            <div class="box">
+                <h3>Contact</h3>
+                <p>Email: armankhan232019@gmail.com</p>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/arman__asim" target="_blank" rel="noopener noreferrer"style="font-size: 20px; font-family: monospace;">&#128247;Instagram</a>
+                <a href="mailto:au.khan9566@gmail.com" style="font-size: 20px; font-family: monospace;">&#9993; Mail</a>
+            </div>
+        </div>
+        </body>
+    </body>
+    </html>
+    
